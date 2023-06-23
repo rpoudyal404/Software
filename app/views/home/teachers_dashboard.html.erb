@@ -1,0 +1,7 @@
+<h2>This is the dashboard for Teacher.</h2>
+
+<h3>Welcome, <%= @teacher.email %></h3>
+
+<% if current_teacher %>
+  <%= button_to "Sign out", destroy_teacher_session_path, method: :delete %>
+<% end %>

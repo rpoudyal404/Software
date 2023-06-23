@@ -1,0 +1,3 @@
+class CrController < ApplicationController
+
+end
