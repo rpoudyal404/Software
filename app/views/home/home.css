@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: wheat;
+}
+
+nav {
+  background: rgb(255, 205, 120);
+  margin: 5px;
+  height: 100px;
+}
+nav .about {
+  float: right;
+  margin: 30px 70px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  padding: 5px 5px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.about:hover {
+  background: rgb(233, 183, 150);
+  transition: 0.2s;
+}
+
+.container {
+  display: grid;
+  margin: 90px;
+  width: auto;
+  grid-template-columns: 10px 50px;
+  gap: 70%;
+  padding: 10px;
+  grid-template-rows: 10px 200px;
+}
+
+.login {
+  background: aqua;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 350px;
+  width: 300px;
+  padding: 10px 50px;
+  border: 3px solid #f1f1f1;
+}
+.login .name, .login .pass {
+  margin: 5px;
+  text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: auto;
+  margin: 10px 0;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 2px solid green;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  width: 100%;
+  font-size: 20px;
+  color: orange;
+  padding: 15px;
+  margin: 10px 0px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button:active, button:hover {
+  opacity: 0.7;
+}
+
+i {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.forget:hover {
+  text-decoration: underline;
+}
+
+.signup {
+  background: aqua;
+  border: 4px solid #f1f1f1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 250px;
+  width: 250px;
+  padding: 15px;
+  margin: 0 0 0 -10px;
+}
+.signup .sign {
+  font-size: 40px;
+  font-style: bold;
+  text-align: center;
+  width: 100%;
+}
+.signup .all {
+  font-size: 30px;
+  margin: 20px 60px;
+}
+.signup .student:hover, .signup .CR:hover, .signup .teacher:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 16%;
+  text-align: center;
+}/*# sourceMappingURL=home.css.map */
