@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
   <h2>Welcome to our site .</h2>
 
   <h3>Register as:</h3>
@@ -17,4 +17,32 @@
 
 </div>
 
-<footer>All Rights Reserved.</footer>
+<footer>All Rights Reserved.</footer> --!>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <div class="signup">
+    <p class="sign">Sign-in</p>
+    <div class="all">
+      <ul>
+        <li><%= link_to 'CR', new_cr_session_path %></li>
+        <li><%= link_to 'Student', new_student_session_path %></li>
+        <li><%= link_to 'Teacher', new_teacher_session_path %></li>
+      </ul>
+    </div>
+  </div>
+    <div class="signup">
+      <p class="sign">Sign-up</p>
+      <div class="all">
+        <ul>
+          <li><%= link_to 'CR', new_cr_registration_path %></li>
+          <li><%= link_to 'Student', new_student_registration_path %></li>
+          <li><%= link_to 'Teacher', new_teacher_registration_path %></li>
+        </ul>
+      </div>
+    </div>
+<footer>&copy; <%= Time.now.year %> All Rights Reserved.</footer>
+</body>
+</html>
+
