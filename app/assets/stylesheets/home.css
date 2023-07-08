@@ -1,4 +1,4 @@
-/* * {
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -6,18 +6,26 @@
 }
 
 body {
-  background: wheat;
+  background: #cfcfcf;
+}
+
+img {
+  margin: 5px;
+}
+
+ul {
+  list-style-type: disc;
 }
 
 nav {
-  background: rgb(255, 205, 120);
+  background: rgb(167, 167, 167);
   margin: 5px;
   height: 100px;
 }
 nav .about {
   float: right;
   margin: 30px 70px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 217, 0);
   text-transform: uppercase;
   padding: 5px 5px;
   font-size: 30px;
@@ -25,92 +33,120 @@ nav .about {
 }
 
 .about:hover {
-  background: rgb(233, 183, 150);
-  transition: 0.2s;
+  background: rgb(0, 0, 0);
+  color: white;
+  transition: 1s;
+  transform: scale(1.3);
 }
 
 .container {
   display: grid;
   margin: 90px;
   width: auto;
-  grid-template-columns: 10px 50px;
-  gap: 70%;
+  justify-content: space-evenly;
+  grid-template-columns: 100px 200px;
   padding: 10px;
   grid-template-rows: 10px 200px;
 }
 
-.login {
-  background: aqua;
+.title {
+  background: #fdfdfd;
   box-sizing: border-box;
-  border-radius: 20px;
-  height: 350px;
-  width: 300px;
-  padding: 10px 50px;
-  border: 3px solid #f1f1f1;
-}
-.login .name, .login .pass {
-  margin: 5px;
-  text-align: center;
-}
-
-input[type=text], input[type=password] {
-  width: auto;
-  margin: 10px 0;
-  padding: 12px 20px;
-  display: inline-block;
-  border: 2px solid green;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #4CAF50;
-  width: 100%;
-  font-size: 20px;
-  color: orange;
-  padding: 15px;
-  margin: 10px 0px 15px;
-  border: none;
-  cursor: pointer;
-}
-
-button:active, button:hover {
-  opacity: 0.7;
-}
-
-i {
-  margin-left: -30px;
-  cursor: pointer;
-}
-
-.forget:hover {
-  text-decoration: underline;
-}
-
-.signup {
-  background: aqua;
-  border: 4px solid #f1f1f1;
-  box-sizing: border-box;
-  border-radius: 5px;
-  height: 250px;
+  border: 2px solid #756e6e;
+  height: 260px;
   width: 250px;
   padding: 15px;
   margin: 0 0 0 -10px;
+  border-radius: 20px;
+  box-shadow: 4px white;
 }
-.signup .sign {
+.title .sign, .title .logs {
+  font-weight: bold;
   font-size: 40px;
-  font-style: bold;
+  color: rgb(0, 0, 0);
   text-align: center;
   width: 100%;
 }
-.signup .all {
+
+.title:hover {
+  transition: 1s;
+  transform: scale(1.07);
+}
+
+.all {
   font-size: 30px;
   margin: 20px 60px;
 }
-.signup .student:hover, .signup .CR:hover, .signup .teacher:hover {
+
+.student:hover, .CR:hover, .teacher:hover {
   text-decoration: underline;
+}
+
+li {
+  padding-top: 12px;
+}
+
+a {
+  margin: 10px;
 }
 
 footer {
   margin-top: 16%;
   text-align: center;
+}
+
+@media (width <= 600px) {
+  img {
+    margin-top: 2px;
+    height: 35px;
+    width: 120px;
+  }
+  body {
+    background-color: whitesmoke;
+  }
+  nav {
+    background: rgb(110, 110, 110);
+    margin: 5px;
+    height: 40px;
+  }
+  nav .about {
+    float: right;
+    margin: -1px;
+    color: rgb(228, 198, 115);
+    font-size: 25px;
+  }
+  nav .about:hover {
+    background-color: inherit;
+    transform: none;
+  }
+  .container {
+    display: contents;
+  }
+  .title {
+    margin: 6px 100px;
+  }
+  .title .sign, .title .logs {
+    font-size: 30px;
+    display: block;
+    font-style: bold;
+  }
+  .title .logs {
+    margin: 20px;
+    text-align: center;
+  }
+  .title .sign {
+    margin-right: 2px 0 2px;
+  }
+  .title .disabled {
+    pointer-events: none;
+  }
+  .title:hover {
+    transition: none;
+    transform: none;
+    display: block;
+  }
+  footer {
+    margin: 20px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=home.css.map */
