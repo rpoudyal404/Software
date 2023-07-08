@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="signup.css" />
+    <title>Signup Form</title>
+  <script >
+    var check = function() {
+  if (document.getElementById('pass').value ==
+    document.getElementById('REpass').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'not matching';
+  }
+}
+  </script> 
+  </head>
+  <body>
+    <div class="Sign-up">
+      <form action="" class="form" >
+        <h2>Sign-up</h2>
+        <div class="logs">
+        <input type="text" class="username" id="uname"autocomplete="off" required/>
+        <label for="uname">Username</label><br>
+     
+          <input type="email" name="email" id="email" autocomplete="off"  required />
+          <label for="email">Email</label>
+        </div>
+        <div class="logs">
+            <input  type="password" name="Pass" id="pass" autocomplete="off" onkeyup=check() required />
+            <label for="Pass">Password</label>
+        </div>
+        <div class="logs">
+            <input  type="password" name="Repass" id="REpass" autocomplete="off" onkeyup = check() required />
+          <label for="REpass">Repeat your password</label>
+        </div>
+        <span id='message'></span>
+       <!-- <input type="checkbox" class="check" onclick="myFunction()">Show Password<br> -->
+        <div class="abc">
+        <!-- <a href="#" class="forgotpw">Forgot password</a> -->
+        <input type="submit" value="Sign-up" class="btn" />
+    </div>
+      </form>
+    </div>
+  </body>
+</html>
